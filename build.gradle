@@ -1,0 +1,5 @@
+apply from: "./.shared/libraries.gradle"
+
+project.group = 'msg134-cs_verification'
+project.version = "${TS_CS_VerificationVersion}"
+apply from: "./.shared/commons.gradle"
