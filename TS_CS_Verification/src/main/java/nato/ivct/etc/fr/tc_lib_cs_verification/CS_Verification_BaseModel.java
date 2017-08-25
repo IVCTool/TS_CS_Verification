@@ -1,5 +1,5 @@
 /*
-Copyright 2017, Fr Capgemini, R. Mauget/JF. Hubler
+Copyright 2017, FRANCE (DGA/Capgemini)
 
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
@@ -37,7 +37,7 @@ import nato.ivct.etc.fr.fctt_common.utils.FCTT_Environment;
 import org.slf4j.Logger;
 
 /**
- * @author Fr Capgemini, R. Mauget/JF. Hubler
+ * @author FRANCE (DGA/Capgemini)
  */
 public class CS_Verification_BaseModel extends IVCT_BaseModel {
 
