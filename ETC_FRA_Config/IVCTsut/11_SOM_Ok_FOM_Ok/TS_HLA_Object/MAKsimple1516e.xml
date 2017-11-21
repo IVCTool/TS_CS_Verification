@@ -89,6 +89,43 @@
                <order>TimeStamp</order>
             </attribute>
          </objectClass>
+		 <objectClass>
+            <name>EmbeddedSystem</name>
+            <sharing>Neither</sharing>
+            <attribute>
+               <name>EntityIdentifier</name>
+               <dataType>HLAASCIIstring</dataType>
+               <updateType>NA</updateType>
+               <updateCondition>NA</updateCondition>
+               <ownership>NoTransfer</ownership>
+               <sharing>PublishSubscribe</sharing>
+               <dimensions/>
+               <transportation>HLAbestEffort</transportation>
+               <order>TimeStamp</order>
+            </attribute>
+            <attribute>
+               <name>HostObjectIdentifier</name>
+               <dataType>HLAASCIIstring</dataType>
+               <updateType>NA</updateType>
+               <updateCondition>NA</updateCondition>
+               <ownership>NoTransfer</ownership>
+               <sharing>PublishSubscribe</sharing>
+               <dimensions/>
+               <transportation>HLAbestEffort</transportation>
+               <order>TimeStamp</order>
+            </attribute>
+            <attribute>
+               <name>RelativePosition</name>
+               <dataType>HLAASCIIstring</dataType>
+               <updateType>NA</updateType>
+               <updateCondition>NA</updateCondition>
+               <ownership>NoTransfer</ownership>
+               <sharing>PublishSubscribe</sharing>
+               <dimensions/>
+               <transportation>HLAbestEffort</transportation>
+               <order>TimeStamp</order>
+            </attribute>
+         </objectClass>
       </objectClass>
    </objects>
    <interactions>
