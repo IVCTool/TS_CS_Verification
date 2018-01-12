@@ -2,13 +2,13 @@
 <objectModel xsi:schemaLocation="http://standards.ieee.org/IEEE1516-2010 http://standards.ieee.org/downloads/1516/1516.2-2010/IEEE1516-DIF-2010.xsd" xmlns="http://standards.ieee.org/IEEE1516-2010" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
    <modelIdentification>
       <name>MAKsimple</name>
-      <type>FOM</type>
+      <type>SOM</type>
       <version>1.0</version>
       <modificationDate>2010-04-22</modificationDate>
       <securityClassification>Unclassified</securityClassification>
-      <purpose>Example FOM</purpose>
+      <purpose>Example SOM</purpose>
       <applicationDomain>RTI Demonstration</applicationDomain>
-      <description>Example FOM to be used with the HLA Evolved version of the rtisimple federate.</description>
+      <description>Example SOM to be used with the HLA Evolved version of the rtisimple federate.</description>
       <poc>
          <pocName>VT MAK</pocName>
          <pocOrg>VT MAK</pocOrg>
@@ -26,11 +26,11 @@
 		<reportFederationExecutions section="4.8" isCallback="true" isUsed="false"/>
 		<joinFederationExecution section="4.9" isCallback="false" isUsed="true"/>
 		<resignFederationExecution section="4.10" isCallback="false" isUsed="true"/>
-		<registerFederationSynchronizationPoint section="4.11" isCallback="false" isUsed="true"/>
-		<confirmSynchronizationPointRegistration section="4.12" isCallback="true" isUsed="true"/>
-		<announceSynchronizationPoint section="4.13" isCallback="true" isUsed="true"/>
-		<synchronizationPointAchieved section="4.14" isCallback="false" isUsed="true"/>
-		<federationSynchronized section="4.15" isCallback="true" isUsed="true"/>
+		<registerFederationSynchronizationPoint section="4.11" isCallback="false" isUsed="false"/>
+		<confirmSynchronizationPointRegistration section="4.12" isCallback="true" isUsed="false"/>
+		<announceSynchronizationPoint section="4.13" isCallback="true" isUsed="false"/>
+		<synchronizationPointAchieved section="4.14" isCallback="false" isUsed="false"/>
+		<federationSynchronized section="4.15" isCallback="true" isUsed="false"/>
 		<requestFederationSave section="4.16" isCallback="false" isUsed="false"/>
 		<initiateFederateSave section="4.17" isCallback="true" isUsed="false"/>
 		<federateSaveBegun section="4.18" isCallback="false" isUsed="false"/>
@@ -48,9 +48,9 @@
 		<abortFederationRestore section="4.30" isCallback="false" isUsed="false"/>
 		<queryFederationRestoreStatus section="4.31" isCallback="false" isUsed="false"/>
 		<federationRestoreStatusResponse section="4.32" isCallback="true" isUsed="false"/>
-		<publishObjectClassAttributes section="5.2" isCallback="false" isUsed="true"/>
+		<publishObjectClassAttributes section="5.2" isCallback="false" isUsed="false"/>
 		<unpublishObjectClassAttributes section="5.3" isCallback="false" isUsed="false"/>
-		<publishInteractionClass section="5.4" isCallback="false" isUsed="true"/>
+		<publishInteractionClass section="5.4" isCallback="false" isUsed="false"/>
 		<unpublishInteractionClass section="5.5" isCallback="false" isUsed="false"/>
 		<subscribeObjectClassAttributes section="5.6" isCallback="false" isUsed="true"/>
 		<unsubscribeObjectClassAttributes section="5.7" isCallback="false" isUsed="false"/>
@@ -72,7 +72,7 @@
 		<reflectAttributeValues section="6.11" isCallback="true" isUsed="true"/>
 		<sendInteraction section="6.12" isCallback="false" isUsed="true"/>
 		<receiveInteraction section="6.13" isCallback="true" isUsed="true"/>
-		<deleteObjectInstance section="6.14" isCallback="false" isUsed="true"/>
+		<deleteObjectInstance section="6.14" isCallback="false" isUsed="false"/>
 		<removeobjectinstance section="6.15" isCallback="true" isUsed="true"/>
 		<localDeleteObjectInstance section="6.16" isCallback="false" isUsed="false"/>
 		<attributesInScope section="6.17" isCallback="true" isUsed="false"/>
@@ -107,18 +107,18 @@
 		<queryAttributeOwnership section="7.17" isCallback="false" isUsed="false"/>
 		<informAttributeOwnership section="7.18" isCallback="true" isUsed="false"/>
 		<isAttributeOwnedByFederate section="7.19" isCallback="false" isUsed="false"/>
-		<enableTimeRegulation section="8.2" isCallback="false" isUsed="true"/>
-		<timeRegulationEnabled section="8.3" isCallback="true" isUsed="true"/>
+		<enableTimeRegulation section="8.2" isCallback="false" isUsed="false"/>
+		<timeRegulationEnabled section="8.3" isCallback="true" isUsed="false"/>
 		<disableTimeRegulation section="8.4" isCallback="false" isUsed="false"/>
-		<enableTimeConstrained section="8.5" isCallback="false" isUsed="true"/>
-		<timeConstrainedEnabled section="8.6" isCallback="true" isUsed="true"/>
+		<enableTimeConstrained section="8.5" isCallback="false" isUsed="false"/>
+		<timeConstrainedEnabled section="8.6" isCallback="true" isUsed="false"/>
 		<disableTimeConstrained section="8.7" isCallback="false" isUsed="false"/>
-		<timeAdvanceRequest section="8.8" isCallback="false" isUsed="true"/>
+		<timeAdvanceRequest section="8.8" isCallback="false" isUsed="false"/>
 		<timeAdvanceRequestAvailable section="8.9" isCallback="false" isUsed="false"/>
 		<nextMessageRequest section="8.10" isCallback="false" isUsed="false"/>
 		<nextMessageRequestAvailable section="8.11" isCallback="false" isUsed="false"/>
 		<flushQueueRequest section="8.12" isCallback="false" isUsed="false"/>
-		<timeAdvanceGrant section="8.13" isCallback="true" isUsed="true"/>
+		<timeAdvanceGrant section="8.13" isCallback="true" isUsed="false"/>
 		<enableAsynchronousDelivery section="8.14" isCallback="false" isUsed="false"/>
 		<disableAsynchronousDelivery section="8.15" isCallback="false" isUsed="false"/>
 		<queryGALT section="8.16" isCallback="false" isUsed="false"/>
@@ -181,28 +181,18 @@
 		<disableAttributeScopeAdvisorySwitch section="10.38" isCallback="false" isUsed="false"/>
 		<enableInteractionRelevanceAdvisorySwitch section="10.39" isCallback="false" isUsed="false"/>
 		<disableInteractionRelevanceAdvisorySwitch section="10.40" isCallback="false" isUsed="false"/>
-		<evokeCallback section="10.41" isCallback="false" isUsed="true"/>
+		<evokeCallback section="10.41" isCallback="false" isUsed="false"/>
 		<evokeMultipleCallbacks section="10.42" isCallback="false" isUsed="true"/>
 		<enableCallbacks section="10.43" isCallback="false" isUsed="false"/>
-		<!--<disableCallbacks section="10.44" isCallback="false" isUsed="false"/>-->
+		<disableCallbacks section="10.44" isCallback="false" isUsed="false"/>
 	</serviceUtilization>
-   <objects>
+  <objects>
       <objectClass>
          <name>HLAobjectRoot</name>
-         <sharing>Publish</sharing>
-         <attribute>
-            <name>HLAprivilegeToDeleteObject</name>
-            <dataType>HLAtoken</dataType>
-            <updateType>Static</updateType>
-            <updateCondition>NA</updateCondition>
-            <ownership>NoTransfer</ownership>
-            <sharing>PublishSubscribe</sharing>
-            <transportation>HLAreliable</transportation>
-            <order>TimeStamp</order>
-         </attribute>
-      <!--   <objectClass>
+         <sharing>Neither</sharing>
+         <objectClass>
             <name>BaseEntity</name>
-            <sharing>Neither</sharing>
+            <sharing>PublishSubscribe</sharing>
             <attribute>
                <name>AccelerationVector</name>
                <dataType>HLAASCIIstring</dataType>
@@ -211,7 +201,7 @@
                <ownership>NoTransfer</ownership>
                <sharing>PublishSubscribe</sharing>
                <dimensions/>
-               <transportation>HLAreliable</transportation>
+               <transportation>HLAbestEffort</transportation>
                <order>TimeStamp</order>
             </attribute>
             <attribute>
@@ -222,7 +212,7 @@
                <ownership>NoTransfer</ownership>
                <sharing>PublishSubscribe</sharing>
                <dimensions/>
-               <transportation>HLAreliable</transportation>
+               <transportation>HLAbestEffort</transportation>
                <order>TimeStamp</order>
             </attribute>
             <attribute>
@@ -233,7 +223,7 @@
                <ownership>NoTransfer</ownership>
                <sharing>PublishSubscribe</sharing>
                <dimensions/>
-               <transportation>HLAreliable</transportation>
+               <transportation>HLAbestEffort</transportation>
                <order>TimeStamp</order>
             </attribute>
             <attribute>
@@ -244,7 +234,7 @@
                <ownership>NoTransfer</ownership>
                <sharing>PublishSubscribe</sharing>
                <dimensions/>
-               <transportation>HLAreliable</transportation>
+               <transportation>HLAbestEffort</transportation>
                <order>TimeStamp</order>
             </attribute>
             <attribute>
@@ -255,27 +245,16 @@
                <ownership>NoTransfer</ownership>
                <sharing>PublishSubscribe</sharing>
                <dimensions/>
-               <transportation>HLAreliable</transportation>
+               <transportation>HLAbestEffort</transportation>
                <order>TimeStamp</order>
             </attribute>
-			<attribute>
-				<name>DamageState</name>
-				<dataType>HLAASCIIstring</dataType>
-				<updateType>NA</updateType>
-				<updateCondition>NA</updateCondition>
-				<ownership>NoTransfer</ownership>
-				<sharing>PublishSubscribe</sharing>
-				<dimensions></dimensions>
-				<transportation>HLAreliable</transportation>
-				<order>TimeStamp</order>
-			</attribute>
          </objectClass>
-	 --></objectClass>
+      </objectClass>
    </objects>
    <interactions>
       <interactionClass>
          <name>HLAinteractionRoot</name>
-         <sharing>Neither</sharing>
+         <sharing>PublishSubscribe</sharing>
          <transportation>HLAreliable</transportation>
          <order>TimeStamp</order>
          <interactionClass>
@@ -366,93 +345,6 @@
                </semantics>
             </parameter>
          </interactionClass>
-		 <interactionClass>
-			<name>MunitionDetonation</name>
-			<sharing>PublishSubscribe</sharing>
-			<dimensions/>
-			<transportation>HLAbestEffort</transportation>
-			<order>Receive</order>
-			<semantics>Communicates information associated with the firing or 
-                    launch of a munition.</semantics>
-			<parameter>
-               <name>EventIdentifier</name>
-               <dataType>HLAASCIIstring</dataType>
-               <semantics>An ID, generated by the issuing federate, used to 
-                  associated related fire and detonation events.
-               </semantics>
-            </parameter>
-            <parameter>
-               <name>FireControlSolutionRange</name>
-               <dataType>HLAASCIIstring</dataType>
-               <semantics>The range used in the fire control solution. Zero 
-                  if the range is unknown or inapplicable.
-               </semantics>
-            </parameter>
-            <parameter>
-               <name>FireMissionIndex</name>
-               <dataType>HLAASCIIstring</dataType>
-               <semantics>A unique index to identify the fire mission (used 
-                  to associated weapon fire interactions in a single fire 
-                  mission).
-               </semantics>
-            </parameter>
-            <parameter>
-               <name>FiringLocation</name>
-               <dataType>HLAASCIIstring</dataType>
-               <semantics>The location, the world coordinate system, of the 
-                  weapon fire.
-               </semantics>
-            </parameter>
-            <parameter>
-               <name>FiringObjectIdentifier</name>
-               <dataType>HLAASCIIstring</dataType>
-               <semantics>The ID of the object ffiring the munition.</semantics>
-            </parameter>
-            <parameter>
-               <name>FuseType</name>
-               <dataType>HLAASCIIstring</dataType>
-               <semantics>The type of fuse on the munition.</semantics>
-            </parameter>
-            <parameter>
-               <name>InitialVelocityVector</name>
-               <dataType>HLAASCIIstring</dataType>
-               <semantics>The velocity vector of the munition when fired.</semantics>
-            </parameter>
-            <parameter>
-               <name>MunitionObjectIdentifier</name>
-               <dataType>HLAASCIIstring</dataType>
-               <semantics>The ID of the associated munition object (if any).</semantics>
-            </parameter>
-            <parameter>
-               <name>MunitionType</name>
-               <dataType>HLAASCIIstring</dataType>
-               <semantics>The type of munition being fired.</semantics>
-            </parameter>
-            <parameter>
-               <name>QuantityFired</name>
-               <dataType>HLAASCIIstring</dataType>
-               <semantics>The number of rounds fired in the fire event.</semantics>
-            </parameter>
-            <parameter>
-               <name>RateOfFire</name>
-               <dataType>HLAASCIIstring</dataType>
-               <semantics>The rate of fire at which the munitions in the burst 
-                  described in the fire event.
-               </semantics>
-            </parameter>
-            <parameter>
-               <name>TargetObjectIdentifier</name>
-               <dataType>HLAASCIIstring</dataType>
-               <semantics>The ID of the object being fired at (if any).</semantics>
-            </parameter>
-            <parameter>
-               <name>WarheadType</name>
-               <dataType>HLAASCIIstring</dataType>
-               <semantics>The type of warhead fitted to the munition being 
-                  fired.
-               </semantics>
-            </parameter>
-		 </interactionClass>
       </interactionClass>
    </interactions>
    <dimensions/>
@@ -1029,7 +921,7 @@
             <dataType>HLAunicodeString</dataType>
             <cardinality>Dynamic</cardinality>
             <encoding>HLAvariableArray</encoding>
-            <semantics>List of designators of FOM modules.</semantics>
+            <semantics>List of designators of SOM modules.</semantics>
          </arrayData>
       </arrayDataTypes>
       <fixedRecordDataTypes>

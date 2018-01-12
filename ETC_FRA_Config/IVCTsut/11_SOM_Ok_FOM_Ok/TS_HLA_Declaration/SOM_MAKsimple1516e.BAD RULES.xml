@@ -48,18 +48,18 @@
 		<abortFederationRestore section="4.30" isCallback="false" isUsed="false"/>
 		<queryFederationRestoreStatus section="4.31" isCallback="false" isUsed="false"/>
 		<federationRestoreStatusResponse section="4.32" isCallback="true" isUsed="false"/>
-		<publishObjectClassAttributes section="5.2" isCallback="false" isUsed="true"/>
+		<publishObjectClassAttributes section="5.2" isCallback="false" isUsed="false"/>
 		<unpublishObjectClassAttributes section="5.3" isCallback="false" isUsed="false"/>
-		<publishInteractionClass section="5.4" isCallback="false" isUsed="true"/>
+		<publishInteractionClass section="5.4" isCallback="false" isUsed="false"/>
 		<unpublishInteractionClass section="5.5" isCallback="false" isUsed="false"/>
 		<subscribeObjectClassAttributes section="5.6" isCallback="false" isUsed="true"/>
 		<unsubscribeObjectClassAttributes section="5.7" isCallback="false" isUsed="false"/>
 		<subscribeInteractionClass section="5.8" isCallback="false" isUsed="true"/>
 		<unsubscribeInteractionClass section="5.9" isCallback="false" isUsed="false"/>
-		<startRegistrationForObjectClass section="5.10" isCallback="true" isUsed="false"/>
-		<stopRegistrationForObjectClass section="5.11" isCallback="true" isUsed="false"/>
-		<turnInteractionsOn section="5.12" isCallback="true" isUsed="false"/>
-		<turnInteractionsOff section="5.13" isCallback="true" isUsed="false"/>
+		<startRegistrationForObjectClass section="5.10" isCallback="true" isUsed="true"/>
+		<stopRegistrationForObjectClass section="5.11" isCallback="true" isUsed="true"/>
+		<turnInteractionsOn section="5.12" isCallback="true" isUsed="true"/>
+		<turnInteractionsOff section="5.13" isCallback="true" isUsed="true"/>
 		<reserveObjectInstanceName section="6.2" isCallback="false" isUsed="true"/>
 		<objectInstanceNameReserved section="6.3" isCallback="true" isUsed="true"/>
 		<releaseObjectInstanceName section="6.4" isCallback="false" isUsed="false"/>
@@ -73,7 +73,7 @@
 		<sendInteraction section="6.12" isCallback="false" isUsed="true"/>
 		<receiveInteraction section="6.13" isCallback="true" isUsed="true"/>
 		<deleteObjectInstance section="6.14" isCallback="false" isUsed="false"/>
-		<removeobjectinstance section="6.15" isCallback="true" isUsed="false"/>
+		<removeobjectinstance section="6.15" isCallback="true" isUsed="true"/>
 		<localDeleteObjectInstance section="6.16" isCallback="false" isUsed="false"/>
 		<attributesInScope section="6.17" isCallback="true" isUsed="false"/>
 		<attributesOutOfScope section="6.18" isCallback="true" isUsed="false"/>

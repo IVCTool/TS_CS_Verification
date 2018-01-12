@@ -1,0 +1,13 @@
+{
+  "sutName"         : "TestFederate"
+  "resultDirectory" : "D:\RMT\git\TS_CS_Verification\ETC_FRA_Config\IVCTsut\26_SOMs_invalid_rule\TS_CS_Verification"
+  "fomFiles"        : [
+    { "fileName"    : "D:\RMT\git\TS_CS_Verification\ETC_FRA_Config\IVCTsut\26_SOMs_invalid_rule\TS_CS_Verification\FOM1.xml" }
+    { "fileName"    : "D:\RMT\git\TS_CS_Verification\ETC_FRA_Config\IVCTsut\26_SOMs_invalid_rule\TS_CS_Verification\FOM2.xml" }
+  ]
+  "somFiles"        : [
+    { "fileName"    : "D:\RMT\git\TS_CS_Verification\ETC_FRA_Config\IVCTsut\26_SOMs_invalid_rule\TS_CS_Verification\SOM1.xml" }
+    { "fileName"    : "D:\RMT\git\TS_CS_Verification\ETC_FRA_Config\IVCTsut\26_SOMs_invalid_rule\TS_CS_Verification\SOM2.xml" }
+    { "fileName"    : "D:\RMT\git\TS_CS_Verification\ETC_FRA_Config\IVCTsut\26_SOMs_invalid_rule\TS_CS_Verification\SOM3.xml" }
+  ]
+}

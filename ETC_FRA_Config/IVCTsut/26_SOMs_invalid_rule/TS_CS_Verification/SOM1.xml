@@ -55,9 +55,9 @@
 		<abortFederationRestore section="4.30" isCallback="false" isUsed="false"/>
 		<queryFederationRestoreStatus section="4.31" isCallback="false" isUsed="false"/>
 		<federationRestoreStatusResponse section="4.32" isCallback="true" isUsed="false"/>
-		<publishObjectClassAttributes section="5.2" isCallback="false" isUsed="true"/>
+		<publishObjectClassAttributes section="5.2" isCallback="false" isUsed="false"/>
 		<unpublishObjectClassAttributes section="5.3" isCallback="false" isUsed="false"/>
-		<publishInteractionClass section="5.4" isCallback="false" isUsed="true"/>
+		<publishInteractionClass section="5.4" isCallback="false" isUsed="false"/>
 		<unpublishInteractionClass section="5.5" isCallback="false" isUsed="false"/>
 		<subscribeObjectClassAttributes section="5.6" isCallback="false" isUsed="true"/>
 		<unsubscribeObjectClassAttributes section="5.7" isCallback="false" isUsed="false"/>

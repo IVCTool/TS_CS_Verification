@@ -289,7 +289,7 @@
          </interactionClass>
          <interactionClass>
             <name>WeaponFire</name>
-            <sharing>PublishSubscribe</sharing>
+            <sharing>Neither</sharing>
             <dimensions/>
             <transportation>HLAbestEffort</transportation>
             <order>Receive</order>

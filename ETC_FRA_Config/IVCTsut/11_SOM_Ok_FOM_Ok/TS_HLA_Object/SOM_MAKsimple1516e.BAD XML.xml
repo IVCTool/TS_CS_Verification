@@ -190,7 +190,7 @@
       <objectClass>
          <name>HLAobjectRoot</name>
          <sharing>Neither</sharing>
-         <objectClass>
+         </objectClass>
             <name>BaseEntity</name>
             <sharing>PublishSubscribe</sharing>
             <attribute>
